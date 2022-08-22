@@ -12,7 +12,7 @@ int check_cycle(listint_t *list)
 {
 	int begin = 0;
 	int len = 0, end = 0;
-	size_t size = sizeof(char *) * 180;
+	size_t size = sizeof(char *) * 1800;
 	listint_t **address = NULL;
 	listint_t **tempAddr = NULL;
 
