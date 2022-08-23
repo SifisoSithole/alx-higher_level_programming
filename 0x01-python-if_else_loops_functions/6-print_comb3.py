@@ -2,6 +2,6 @@
 for first in range(0,9):
     for second in range(first + 1, 10):
         if first != 8:
-            print(f"{first}{second}", end=", ")
+            print("{0}{1}".format(first, second), end=", ")
         else:
-            print(f"{first}{second}")
+            print("{0}{1}".format(first, second))
