@@ -10,10 +10,10 @@ if __name__ == "__main__":
     a = int(argv[1])
     b = int(argv[3])
     signs = ["+", "-", "*", "/"]
-    func = [cal.add, cal.sub, cal.mul, cal.div]
+    fun = [cal.add, cal.sub, cal.mul, cal.div]
     for i in range(len(func)):
         if argv[2] == signs[i]:
-            print("{:d} {:s} {:d} = {:d}".format(a, signs[i], b, func[i](a, b)))
+            print("{:d} {:s} {:d} = {:d}".format(a, signs[i], b, fun[i](a, b)))
             quit()
     else:
         print("Unknown operator. Available operators: +, -, * and /")
