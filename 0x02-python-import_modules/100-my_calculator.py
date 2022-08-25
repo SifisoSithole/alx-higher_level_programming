@@ -11,7 +11,7 @@ if __name__ == "__main__":
     b = int(argv[3])
     signs = ["+", "-", "*", "/"]
     fun = [cal.add, cal.sub, cal.mul, cal.div]
-    for i in range(len(func)):
+    for i in range(len(fun)):
         if argv[2] == signs[i]:
             print("{:d} {:s} {:d} = {:d}".format(a, signs[i], b, fun[i](a, b)))
             quit()
