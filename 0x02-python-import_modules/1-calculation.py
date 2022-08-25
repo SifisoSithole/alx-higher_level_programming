@@ -4,6 +4,6 @@ if __name__ == "__main__":
     a = 10
     b = 5
     signs = ["+", "-", "*", "/"]
-    functions = [cal.add, cal.sub, cal.mul, cal.div]
-    for i in range(len(functions)):
-        print("{0:d} {1:s} {2:d} = {3:d}".format(a, signs[i], b, functions[i](a, b)))
+    func = [cal.add, cal.sub, cal.mul, cal.div]
+    for i in range(len(func)):
+        print("{:d} {:s} {:d} = {:d}".format(a, signs[i], b, func[i](a, b)))

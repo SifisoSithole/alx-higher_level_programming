@@ -12,4 +12,3 @@ if __name__ == "__main__":
             print(f"{i:d}: {sys.argv[i]:s}")
     else:
         print("0 arguments.")
-
