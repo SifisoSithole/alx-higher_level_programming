@@ -47,8 +47,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * Don’t forget to push your header file
 * All your header files should be include guarded
 
-#### Task 1: 0-run
-Write a Shell script that runs a Python script.
-The Python file name will be saved in the environment variable $PYFILE
 
 
