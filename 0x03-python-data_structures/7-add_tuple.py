@@ -5,11 +5,11 @@ def add_tuple(tuple_a=(), tuple_b=()):
     for i in range(2):
         try:
             a.append(tuple_a[i])
-        except:
+        except Exception:
             a.append(0)
     for i in range(2):
         try:
             b.append(tuple_b[i])
-        except:
+        except Exception:
             b.append(0)
     return a[0] + b[0], a[1] + b[1]
