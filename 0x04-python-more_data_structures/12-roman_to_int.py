@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if not isinstance(test_string, str):
+    if not isinstance(roman_string, str):
         return 0
     se = {
             "R": 0,
