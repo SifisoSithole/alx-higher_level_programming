@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
     if not my_list:
-        return None
+        return []
     new_list = my_list.copy()
     if search in my_list:
         i = my_list.index(search)
