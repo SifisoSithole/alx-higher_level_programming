@@ -54,7 +54,7 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.__width + self.__height)
-        
+
     def __str__(self):
         """Define the print represantation of a rectangle"""
         str_rep = ""
@@ -62,7 +62,7 @@ class Rectangle:
             return ""
         for height in range(self.__height):
             for width in range(self.__width):
-                str_rep += "#" 
+                str_rep += "#"
             if height < self.__height - 1:
                 str_rep += "\n"
         return str_rep
