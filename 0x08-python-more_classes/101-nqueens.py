@@ -2,6 +2,7 @@
 """This program solves the N queens puzzle"""
 import sys
 
+
 def solve_N_queen(N):
     """
     Returns array of possible queen placements
@@ -25,7 +26,7 @@ def solve_N_queen(N):
                         cor.append(x)
                         cor.append(y)
                         solutions.append(cor)
-             
+
         for c in range(N):
             if c in column:
                 continue
@@ -46,6 +47,7 @@ def solve_N_queen(N):
 
     backtrack(0)
     return solutions
+
 
 if len(sys.argv) != 2:
     print("Usage: nqueens N")
