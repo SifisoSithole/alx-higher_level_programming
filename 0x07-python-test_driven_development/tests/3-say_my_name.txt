@@ -1,0 +1,29 @@
+The ``3-say_my_name`` module
+=============================
+
+Using ``say_my_name``
+
+This is the 3-say_my_name test file in reStructured format. First import ``say_my_name`` from the ``3-say_my_name`` module:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Works with only strings:
+	
+	>>> say_my_name("Sifiso", "Sithole")
+	My name is Sifiso Sithole
+
+	>>> say_my_name(90, "Sithole")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name("Sifiso", 80)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+	>>> say_my_name("Sifiso", None)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+Only last_name is optional:
+	
+	>>> say_my_name("Sifiso")
+	My name is Sifiso 
