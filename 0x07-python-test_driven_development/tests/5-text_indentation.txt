@@ -1,0 +1,20 @@
+The ``5-text_indentation`` module
+==================================
+
+using ``text_indentation``
+
+This is the 3-say_my_name test file in reStructured format. First import ``say_my_name`` from the ``3-say_my_name`` module:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Works with strings only:
+
+	>>> text_indentation("Hi this is test string. Start of a new line: another new line?")
+	Hi this is test string.
+
+	Start of a new line:
+
+	another new line?
+
+	>>> text_indentation(78)
+	Traceback (most recent call last):
+	TypeError: text must be a string
