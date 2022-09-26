@@ -37,4 +37,4 @@ class MyInt(int):
         if self.my_int != other:
             return False
         else:
-            return True 
+            return True
