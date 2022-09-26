@@ -1,4 +1,4 @@
-#!/usr/bin/pythone3
+#!/usr/bin/python3
 """
 This is the 2-is_same_class module
 
