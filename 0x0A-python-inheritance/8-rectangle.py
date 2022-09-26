@@ -2,7 +2,6 @@
 """Define a BaseGeometry class"""
 
 
-
 class BaseGeometry:
     """Super class"""
     def area(self):
@@ -16,10 +15,11 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """Rectangle represantation"""
     def __init__(self, width, height):
         super().integer_validator("width", width)
-        self.__width = width
+        self.width = width
         super().integer_validator("height", height)
-        self.__height = height
+        self.height = height
