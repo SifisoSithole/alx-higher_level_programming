@@ -31,7 +31,8 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """return rectangle"""
-        return "[{}] {}/{}".format(type(self).__name__, self.__width, self.__height)
+        s = f"[{type(self).__name__}] {self.__width}/{ self.__height}"
+        return s 
 
 
 class Square(Rectangle):
