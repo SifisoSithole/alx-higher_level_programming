@@ -1,0 +1,37 @@
+The 1-my_list module
+======================
+
+Using print_sorted
+
+First import print_sorted from the 1-my_list module:
+	>>> MyList = __import__('1-my_list').MyList
+
+Works with integers:
+	my_list = MyList()
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+	>>> my_list = MyList()
+	>>> my_list.append(50)
+	>>> my_list.append(-70)
+	>>> my_list.append(299)
+	>>> my_list.append(3)
+	>>> my_list.append(-2000)
+	>>> my_list.print_sorted()
+	[-2000, -70, 3, 50, 299]
+
+	>>> my_list = MyList()
+	>>> my_list.append(None)
+	>>> my_list.append(-2000)
+	>>> my_list.append(3)
+	>>> my_list.append(80)
+	>>> my_list.append(8454)
+	>>> my_list.print_sorted()
+	Traceback (most recent call last):
+	TypeError: '<' not supported between instances of 'int' and 'NoneType'
