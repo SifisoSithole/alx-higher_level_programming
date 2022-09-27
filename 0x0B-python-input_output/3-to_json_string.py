@@ -15,4 +15,5 @@ def to_json_string(my_obj):
     Return:
         String represantation of my_object
     """
+    json = __import__('json')
     return json.dumps(my_obj)
