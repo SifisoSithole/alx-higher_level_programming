@@ -11,7 +11,7 @@ def from_json_string(my_str):
     """
     Returns the python data structure represanted by a JSON string
     parameters:
-        my_str (str): 
+        my_str (str): String
     Return:
         Python data structure
     """
