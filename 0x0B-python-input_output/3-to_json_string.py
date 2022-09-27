@@ -5,6 +5,7 @@ import json
 Returns the JSON represantation of an object
 """
 
+
 def to_json_string(my_obj):
     """
     Returns the JSON represantation of an object
