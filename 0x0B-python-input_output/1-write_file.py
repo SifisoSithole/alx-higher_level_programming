@@ -13,9 +13,9 @@ def write_file(filename="", text=""):
         filename (str): The name of the file
     """
     line = 0
-    if text == None or filename == None:
+    if text is None or filename is None:
         return line
 
     with open(filename, 'w', encoding="utf-8") as f:
-            line = f.write(str(text))
+        line = f.write(str(text))
     return line
