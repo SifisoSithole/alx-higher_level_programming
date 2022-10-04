@@ -6,11 +6,20 @@ import csv
 Define the ``Base`` class
 
 The ``Base`` class is the base class of all the classes
+
+it will be the super class for the Rectangle and Square class
 """
 
 
 class Base:
-    """Define a base class"""
+    """
+    Define a base class
+    The ``Base`` class is the base class of all the classes
+    it will be the super class for the Rectangle and Square class
+    attributes:
+        __nb_objects (int): handles automatic id assignment
+
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
