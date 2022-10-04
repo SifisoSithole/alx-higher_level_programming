@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-import json
-import csv
-
 """
 Define the ``Base`` class
 
@@ -9,6 +6,8 @@ The ``Base`` class is the base class of all the classes
 
 it will be the super class for the Rectangle and Square class
 """
+import json
+import csv
 
 
 class Base:
@@ -87,6 +86,7 @@ class Base:
         for dictionary in list_dict:
             inst_list.append(cls.create(**dictionary))
         return inst_list
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Saves to csv file"""

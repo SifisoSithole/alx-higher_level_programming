@@ -1,10 +1,22 @@
 #!/usr/bin/python3
+"""
+A rectangle represantation
+
+This class will represent a rectangle
+
+This class will contain width, height and coordinates of the rectangle
+"""
 from models.rectangle import Rectangle
-"""Defines a square and coordinates"""
 
 
 class Square(Rectangle):
-    """Represantation of a square"""
+    """
+    A rectangle represantation
+
+    This class will represent a rectangle
+
+    This class will contain width, height and coordinates of the rectangle
+    """
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize a new square"""
         super().__init__(size, size, x, y, id)

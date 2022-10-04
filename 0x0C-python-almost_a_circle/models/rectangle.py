@@ -1,11 +1,22 @@
 #!/usr/bin/python3
+"""
+Define a Rectangle class
+
+This class will represent a rectangle
+
+This class will contain width, height and coordinates of the rectangle
+"""
+
 from models.base import Base
 
-"""Define a rectangle"""
-
-
 class Rectangle(Base):
-    """A rectangle represantation"""
+    """
+    A rectangle represantation
+
+    This class will represent a rectangle
+
+    This class will contain width, height and coordinates of the rectangle
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a Rectangle instance"""
         self.width = width
