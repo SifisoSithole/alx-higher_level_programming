@@ -16,9 +16,9 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s1.height, 5)
         self.assertEqual(s1.x, 0)
         self.assertEqual(s1.y, 0)
-        self.assertEqual(s1.id, 1)
+        self.assertEqual(s1.id, 13)
         self.assertEqual(s1.area(), 25)
-        self.assertEqual(str(s1), "[Square] (1) 0/0 - 5")
+        self.assertEqual(str(s1), "[Square] (13) 0/0 - 5")
 
     def test_data_validation(self):
         """Test data validation"""

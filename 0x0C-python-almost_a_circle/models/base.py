@@ -10,11 +10,7 @@ The ``Base`` class is the base class of all the classes
 
 
 class Base:
-    """
-    Define a base class
-    This base class will be the super class 
-    __nb_objects assigns id
-    """
+    """Define a base class"""
     __nb_objects = 0
 
     def __init__(self, id=None):

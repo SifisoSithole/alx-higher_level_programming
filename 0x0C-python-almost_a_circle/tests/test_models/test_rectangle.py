@@ -14,9 +14,9 @@ class TestRectangle(unittest.TestCase):
         rectangle_2 = Rectangle(4, 5, 0, 0, 23)
         rectangle_3 = Rectangle(4, 5, 0, 0)
 
-        self.assertEqual(rectangle_1.id, 1)
+        self.assertEqual(rectangle_1.id, 11)
         self.assertEqual(rectangle_2.id, 23)
-        self.assertEqual(rectangle_3.id, 2)
+        self.assertEqual(rectangle_3.id, 12)
 
     def test_data_types(self):
         """Testing data types"""
