@@ -6,8 +6,8 @@ This class will represent a rectangle
 
 This class will contain width, height and coordinates of the rectangle
 """
-
 from models.base import Base
+
 
 class Rectangle(Base):
     """
