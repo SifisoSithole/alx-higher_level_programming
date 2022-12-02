@@ -16,7 +16,7 @@ if __name__ == "__main__":
                            passwd=ls[1], db=ls[2])
     cur = conn.cursor()
     cur.execute(f"SELECT `cities`.`name` FROM `cities` LEFT JOIN `states` ON \
-                `states`.`id` = `cities`.`state_id` WHERE `states`.`name` = \
+                `states`.`id` = `cities`.`state_id` WHERE BINARY `states`.`name` = \
                 '{ls[3]}' ORDER BY `cities`.`id` ASC")
     rows = cur.fetchall()
     for i in range(len(rows)):
