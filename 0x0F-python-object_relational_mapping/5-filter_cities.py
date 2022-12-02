@@ -15,9 +15,9 @@ if __name__ == "__main__":
     conn = MySQLdb.connect(host="localhost", port=3306, user=ls[0],
                            passwd=ls[1], db=ls[2])
     cur = conn.cursor()
-    cur.execute(f"SELECT cities.name FROM cities LEFT JOIN states ON \
-                states.id = cities.state_id WHERE states.name = \
-                '{ls[3]}' ORDER BY cities.id ASC")
+    cur.execute(f"SELECT `cities`.`name` FROM `cities` LEFT JOIN `states` ON \
+                `states`.`id` = `cities`.`state_id` WHERE `states`.`name` = \
+                '{ls[3]}' ORDER BY `cities`.`id` ASC")
     rows = cur.fetchall()
     for i in range(len(rows)):
         if i != len(rows) - 1:
