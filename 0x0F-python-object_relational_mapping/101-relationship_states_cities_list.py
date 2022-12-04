@@ -8,7 +8,7 @@ Arguments:
     2: Database
 """
 
-from sys import argv as det
+import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from relationship_state import State
