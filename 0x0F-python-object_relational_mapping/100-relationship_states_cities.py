@@ -11,13 +11,14 @@ Arguments:
 from sys import argv as det
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-from relationship_state import Base, State
-from relationship_city import City
+from relationship_state import State
+from relationship_city import City, Base
 
-if __name__ == '__name__':
+if __name__ == '__main__':
     conn_str = f'mysql+mysqldb://{det[1]}:{det[2]}@localhost/{det[3]}'
     engine = create_engine(conn_str)
     Base.metadata.create_all(engine)
     session = Session(engine)
-    session.add(City(name="San Francisco"), state=State(name="California"))
+    new_city = City(name="San Francisco")
+    session.add(new_city, state=State(name="California"))
     session.commit()
