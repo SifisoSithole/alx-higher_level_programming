@@ -13,6 +13,6 @@ if __name__ == '__main__':
         if r.status_code == requests.codes.ok:
             print(r.text)
         else:
-            print(r.status_code)
+            print(f'Error code: {r.status_code}')
     except Exception:
-        print('error')
+        pass
