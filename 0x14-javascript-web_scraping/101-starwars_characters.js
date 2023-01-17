@@ -11,6 +11,9 @@ request.get(url, (err, resp, body) => {
       const url2 = characters[i].substring(0, characters[i].length - 1);
       request.get(url2, (e, res, b) => {
         if (!e) {
+          while (res.statusCode !== 200) {
+            continue;
+          }
           console.log(JSON.parse(b).name);
         }
       });
