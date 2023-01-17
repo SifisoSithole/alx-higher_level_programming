@@ -4,11 +4,11 @@
 const file = process.argv[2];
 const fs = require('fs');
 
-fs.readFile(file, "utf8", (err, content) => {
-	if (err) {
-		console.log(err);
-		return;
-	}
+fs.readFile(file, 'utf8', (err, content) => {
+  if (err) {
+    console.log(err);
+    return;
+  }
 
-	console.log(content);
+  console.log(content);
 });
