@@ -6,6 +6,6 @@ const request = require('request');
 
 request.get(url, (err, response, body) => {
   if (!err) {
-    	console.log('code:', response.statusCode);
+    console.log('code:', response.statusCode);
   }
 });
