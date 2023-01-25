@@ -4,7 +4,7 @@ window.onload = () => {
 		console.log(lang)
 		$.get('https://www.fourtonfish.com/hellosalut/hello/?lang=' + lang, (data, textStatus) => {
 			if (textStatus === 'success') {
-				console.log(data.hello);
+				$('DIV#hello').text(data.hello);
 			}
 		})
 	});
